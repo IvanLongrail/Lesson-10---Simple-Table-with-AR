@@ -15,9 +15,12 @@
 		B638D85D225F5E75005749C5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638D85C225F5E75005749C5 /* ListViewController.swift */; };
 		B638D85F225F5E81005749C5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638D85E225F5E81005749C5 /* Product.swift */; };
 		B638D861225F5EAD005749C5 /* ListViewController + UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638D860225F5EAD005749C5 /* ListViewController + UITableView.swift */; };
-		B638D863225F5EBF005749C5 /* ListViewController + Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638D862225F5EBF005749C5 /* ListViewController + Methods.swift */; };
+		B638D863225F5EBF005749C5 /* ListViewController + Custom Methods Of Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638D862225F5EBF005749C5 /* ListViewController + Custom Methods Of Setup.swift */; };
 		B638D866225F64AB005749C5 /* ListViewController + Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638D865225F64AB005749C5 /* ListViewController + Navigation.swift */; };
-		B638D86E225F9BFC005749C5 /* ListViewController + ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638D86D225F9BFC005749C5 /* ListViewController + ARSCNViewDelegate.swift */; };
+		B63E445D2263850200938B53 /* DetailViewController + Custom Methods Of Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63E445C2263850200938B53 /* DetailViewController + Custom Methods Of Setup.swift */; };
+		B63E445F2263866300938B53 /* DetailViewController + ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63E445E2263866300938B53 /* DetailViewController + ARSCNViewDelegate.swift */; };
+		B63E44612263873A00938B53 /* DetailViewController + Custom Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63E44602263873A00938B53 /* DetailViewController + Custom Methods.swift */; };
+		B63E446322638BF800938B53 /* Product + Load Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63E446222638BF800938B53 /* Product + Load Methods.swift */; };
 		B64565FF2260C50D00A5BB48 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64565FE2260C50D00A5BB48 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -32,9 +35,12 @@
 		B638D85C225F5E75005749C5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		B638D85E225F5E81005749C5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		B638D860225F5EAD005749C5 /* ListViewController + UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController + UITableView.swift"; sourceTree = "<group>"; };
-		B638D862225F5EBF005749C5 /* ListViewController + Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController + Methods.swift"; sourceTree = "<group>"; };
+		B638D862225F5EBF005749C5 /* ListViewController + Custom Methods Of Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController + Custom Methods Of Setup.swift"; sourceTree = "<group>"; };
 		B638D865225F64AB005749C5 /* ListViewController + Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController + Navigation.swift"; sourceTree = "<group>"; };
-		B638D86D225F9BFC005749C5 /* ListViewController + ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController + ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		B63E445C2263850200938B53 /* DetailViewController + Custom Methods Of Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController + Custom Methods Of Setup.swift"; sourceTree = "<group>"; };
+		B63E445E2263866300938B53 /* DetailViewController + ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController + ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		B63E44602263873A00938B53 /* DetailViewController + Custom Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController + Custom Methods.swift"; sourceTree = "<group>"; };
+		B63E446222638BF800938B53 /* Product + Load Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product + Load Methods.swift"; sourceTree = "<group>"; };
 		B64565FE2260C50D00A5BB48 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				B638D85E225F5E81005749C5 /* Product.swift */,
+				B63E446222638BF800938B53 /* Product + Load Methods.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,10 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				B638D85C225F5E75005749C5 /* ListViewController.swift */,
+				B638D862225F5EBF005749C5 /* ListViewController + Custom Methods Of Setup.swift */,
 				B638D860225F5EAD005749C5 /* ListViewController + UITableView.swift */,
-				B638D862225F5EBF005749C5 /* ListViewController + Methods.swift */,
 				B638D865225F64AB005749C5 /* ListViewController + Navigation.swift */,
-				B638D86D225F9BFC005749C5 /* ListViewController + ARSCNViewDelegate.swift */,
 			);
 			path = "List View Controller";
 			sourceTree = "<group>";
@@ -129,6 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				B638D846225F5D9E005749C5 /* DetailViewController.swift */,
+				B63E445C2263850200938B53 /* DetailViewController + Custom Methods Of Setup.swift */,
+				B63E445E2263866300938B53 /* DetailViewController + ARSCNViewDelegate.swift */,
+				B63E44602263873A00938B53 /* DetailViewController + Custom Methods.swift */,
 			);
 			path = "Detail View Controller";
 			sourceTree = "<group>";
@@ -207,11 +216,14 @@
 			files = (
 				B638D847225F5D9E005749C5 /* DetailViewController.swift in Sources */,
 				B638D866225F64AB005749C5 /* ListViewController + Navigation.swift in Sources */,
+				B63E44612263873A00938B53 /* DetailViewController + Custom Methods.swift in Sources */,
+				B63E445D2263850200938B53 /* DetailViewController + Custom Methods Of Setup.swift in Sources */,
 				B638D85F225F5E81005749C5 /* Product.swift in Sources */,
+				B63E445F2263866300938B53 /* DetailViewController + ARSCNViewDelegate.swift in Sources */,
 				B638D843225F5D9E005749C5 /* AppDelegate.swift in Sources */,
-				B638D863225F5EBF005749C5 /* ListViewController + Methods.swift in Sources */,
-				B638D86E225F9BFC005749C5 /* ListViewController + ARSCNViewDelegate.swift in Sources */,
+				B638D863225F5EBF005749C5 /* ListViewController + Custom Methods Of Setup.swift in Sources */,
 				B638D861225F5EAD005749C5 /* ListViewController + UITableView.swift in Sources */,
+				B63E446322638BF800938B53 /* Product + Load Methods.swift in Sources */,
 				B638D85D225F5E75005749C5 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

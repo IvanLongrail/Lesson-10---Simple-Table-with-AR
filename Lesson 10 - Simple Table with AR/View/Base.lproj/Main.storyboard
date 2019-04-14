@@ -68,12 +68,6 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <segue destination="BV1-FR-VrT" kind="show" identifier="detailSegue" animates="NO" id="LXE-Vu-VEr">
-                                                <segue key="commit" inheritsFrom="parent" id="Xlq-B1-VZk"/>
-                                                <segue key="preview" inheritsFrom="commit" id="Dzu-ZN-j2i"/>
-                                            </segue>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -109,6 +103,7 @@
                         <outlet property="blackView" destination="Ixh-OW-04t" id="mEk-hW-ymj"/>
                         <outlet property="sceneView" destination="HA8-48-ksD" id="2k3-dU-fDd"/>
                         <outlet property="tableView" destination="tpy-Z9-1et" id="fiR-Hp-AC6"/>
+                        <segue destination="BV1-FR-VrT" kind="show" identifier="detailSegue" animates="NO" id="US3-UA-Agy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gzJ-HB-hJJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -151,18 +146,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qso-iT-X6l">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="tvb-yu-gFV" firstAttribute="leading" relation="lessThanOrEqual" secondItem="nVD-9s-a1G" secondAttribute="trailing" constant="217" id="1Et-Nn-t0a"/>
+                            <constraint firstItem="qso-iT-X6l" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="6PV-qh-9ps"/>
+                            <constraint firstItem="qso-iT-X6l" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="Etx-bX-ALc"/>
                             <constraint firstItem="nVD-9s-a1G" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="20" id="MSh-5s-eBf"/>
                             <constraint firstItem="sfm-Pq-Qxc" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="20" id="UJQ-bG-TJw"/>
                             <constraint firstItem="w3Z-z5-50W" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="20" id="YPn-dT-MJH"/>
                             <constraint firstItem="tvb-yu-gFV" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" id="aRn-NV-7kK"/>
                             <constraint firstItem="nVD-9s-a1G" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" id="d8I-9F-8qg"/>
+                            <constraint firstAttribute="bottom" secondItem="qso-iT-X6l" secondAttribute="bottom" id="g6U-Cz-ZBn"/>
                             <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="tvb-yu-gFV" secondAttribute="trailing" constant="20" id="h4b-ig-0tl"/>
                             <constraint firstItem="w3Z-z5-50W" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="hsT-0T-SQ3"/>
                             <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="w3Z-z5-50W" secondAttribute="trailing" constant="20" id="k1D-Ta-Z0P"/>
+                            <constraint firstItem="qso-iT-X6l" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="vcI-eP-7KO"/>
                             <constraint firstItem="sfm-Pq-Qxc" firstAttribute="top" secondItem="nVD-9s-a1G" secondAttribute="bottom" constant="8" id="w9q-dX-vIB"/>
                             <constraint firstItem="tvb-yu-gFV" firstAttribute="leading" relation="lessThanOrEqual" secondItem="sfm-Pq-Qxc" secondAttribute="trailing" constant="222" id="zoS-Wq-oUo"/>
                         </constraints>
@@ -174,6 +176,7 @@
                         <outlet property="popularityRatingLabel" destination="w3Z-z5-50W" id="dy9-WM-rYR"/>
                         <outlet property="priceLabel" destination="tvb-yu-gFV" id="DjH-hD-7Dc"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="startImageView" destination="qso-iT-X6l" id="T9s-0n-Lav"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
@@ -199,7 +202,4 @@
             <point key="canvasLocation" x="-836.23188405797111" y="20.758928571428569"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Dzu-ZN-j2i"/>
-    </inferredMetricsTieBreakers>
 </document>

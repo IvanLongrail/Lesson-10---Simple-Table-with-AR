@@ -6,7 +6,6 @@
 //  Copyright © 2019 Иван longrail. All rights reserved.
 //
 
-import UIKit
 import ARKit
 
 class ListViewController: UIViewController {
@@ -16,15 +15,13 @@ class ListViewController: UIViewController {
     @IBOutlet weak var blackBackgroundView: UIView!
     @IBOutlet weak var blackView: UIView!
  
-    
-    var image = UIImage()
+    var endImage: UIImage? // for animation
     var products = [Product]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         products = loadProducts()
         setupUI()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,12 +29,12 @@ class ListViewController: UIViewController {
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
-        //configuration.planeDetection = [.horizontal]
         
         // Run the view's session
         sceneView.session.run(configuration)
     }
 
+    // Animation
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
@@ -53,40 +50,9 @@ class ListViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
+
         // Pause the view's session
-        sceneView.session.pause()
+       sceneView.session.pause()
     }
     
-}
-
-// MARK: - Custom Methods
-extension ListViewController {
-    func setupUI() {
-        view.alpha = 0
-        
-        tableView.dataSource = self
-        blackView.isOpaque = true
-        
-        makeTableЕransparent()
-        
-        let scene = SCNScene()
-        sceneView.scene = scene
-        //sceneView.alpha = 0
-        
-        //addBlurEffect()
-    }
-    
-    func makeTableЕransparent() {
-        tableView.layer.backgroundColor = UIColor.clear.cgColor
-        tableView.backgroundColor = .clear
-    }
-
-//    func addBlurEffect() {
-//        let darkBlur = UIBlurEffect(style: .dark)
-//        let blurView = UIVisualEffectView(effect: darkBlur)
-//        blurView.frame = sceneView.bounds
-//        blurView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-//        sceneView.addSubview(blurView)
-//    }
 }
