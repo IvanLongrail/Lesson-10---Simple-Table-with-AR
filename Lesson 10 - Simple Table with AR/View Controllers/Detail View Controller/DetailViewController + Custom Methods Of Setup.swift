@@ -23,11 +23,17 @@ extension DetailViewController {
         startImageView.image = startImage
         
         startImageView.alpha = 1 // for animation
+        priceLabel.alpha = 0
+        nameLabel.alpha = 0
+        categoryLabel.alpha = 0
+        popularityRatingLabel.alpha = 0
+        sceneView.alpha = 0
         
         let scene = SCNScene()
         sceneView.scene = scene
         sceneView.autoenablesDefaultLighting = true
         
         sceneView.delegate = self
+        
     }
 }

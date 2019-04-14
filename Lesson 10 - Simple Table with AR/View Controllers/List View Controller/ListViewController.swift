@@ -13,7 +13,6 @@ class ListViewController: UIViewController {
     @IBOutlet weak var sceneView: ARSCNView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var blackBackgroundView: UIView!
-    @IBOutlet weak var blackView: UIView!
  
     var endImage: UIImage? // for animation
     var products = [Product]()
@@ -26,10 +25,10 @@ class ListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
-        
+
         // Run the view's session
         sceneView.session.run(configuration)
     }

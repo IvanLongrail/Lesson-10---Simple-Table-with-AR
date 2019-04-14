@@ -21,18 +21,16 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HA8-48-ksD" userLabel="Scene View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </arscnView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UjW-yy-G3W">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UjW-yy-G3W">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="nFe-b9-pDI">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nFe-b9-pDI">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LUN-nb-8tt" userLabel="Black Background View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUN-nb-8tt" userLabel="Black Background View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tpy-Z9-1et">
@@ -71,36 +69,33 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ixh-OW-04t">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="tpy-Z9-1et" secondAttribute="bottom" id="0vN-73-GvF"/>
                             <constraint firstAttribute="bottom" secondItem="HA8-48-ksD" secondAttribute="bottom" id="5rA-2g-hNa"/>
+                            <constraint firstItem="LUN-nb-8tt" firstAttribute="trailing" secondItem="nOj-4z-uC9" secondAttribute="trailing" id="8pi-XD-2xh"/>
+                            <constraint firstAttribute="bottom" secondItem="tpy-Z9-1et" secondAttribute="bottom" id="BlR-sY-m6c"/>
                             <constraint firstItem="HA8-48-ksD" firstAttribute="leading" secondItem="nOj-4z-uC9" secondAttribute="leading" id="Ei7-ZY-eBU"/>
                             <constraint firstItem="HA8-48-ksD" firstAttribute="top" secondItem="CPN-QC-59Q" secondAttribute="top" id="LEY-FP-eaP"/>
+                            <constraint firstItem="LUN-nb-8tt" firstAttribute="top" secondItem="CPN-QC-59Q" secondAttribute="top" id="SME-zK-2jx"/>
+                            <constraint firstAttribute="bottom" secondItem="LUN-nb-8tt" secondAttribute="bottom" id="TH0-jC-F42"/>
                             <constraint firstItem="tpy-Z9-1et" firstAttribute="trailing" secondItem="nOj-4z-uC9" secondAttribute="trailing" id="arY-FX-Y9j"/>
+                            <constraint firstItem="UjW-yy-G3W" firstAttribute="leading" secondItem="nOj-4z-uC9" secondAttribute="leading" id="cet-it-lxq"/>
+                            <constraint firstItem="UjW-yy-G3W" firstAttribute="trailing" secondItem="nOj-4z-uC9" secondAttribute="trailing" id="gja-iJ-L9t"/>
+                            <constraint firstAttribute="bottom" secondItem="UjW-yy-G3W" secondAttribute="bottom" id="nIg-zy-l9O"/>
                             <constraint firstItem="HA8-48-ksD" firstAttribute="trailing" secondItem="nOj-4z-uC9" secondAttribute="trailing" id="nuM-dp-NbD"/>
-                            <constraint firstItem="tpy-Z9-1et" firstAttribute="top" secondItem="nOj-4z-uC9" secondAttribute="top" id="pGR-2L-yie"/>
-                            <constraint firstItem="tpy-Z9-1et" firstAttribute="leading" secondItem="nOj-4z-uC9" secondAttribute="leading" id="uW9-dH-ydr"/>
+                            <constraint firstItem="UjW-yy-G3W" firstAttribute="top" secondItem="CPN-QC-59Q" secondAttribute="top" id="qBS-PH-2tI"/>
+                            <constraint firstItem="tpy-Z9-1et" firstAttribute="top" secondItem="nOj-4z-uC9" secondAttribute="top" id="wcb-BX-F1I"/>
+                            <constraint firstItem="tpy-Z9-1et" firstAttribute="leading" secondItem="nOj-4z-uC9" secondAttribute="leading" id="wfC-E0-Bnh"/>
+                            <constraint firstItem="LUN-nb-8tt" firstAttribute="leading" secondItem="nOj-4z-uC9" secondAttribute="leading" id="wlV-DY-oPn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nOj-4z-uC9"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Ixh-OW-04t"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Choose the furniture" id="eHS-Uu-q5d">
                         <barButtonItem key="backBarButtonItem" title="Back" id="07a-lB-CLC"/>
                     </navigationItem>
                     <connections>
                         <outlet property="blackBackgroundView" destination="LUN-nb-8tt" id="mJp-58-VwX"/>
-                        <outlet property="blackView" destination="Ixh-OW-04t" id="mEk-hW-ymj"/>
                         <outlet property="sceneView" destination="HA8-48-ksD" id="2k3-dU-fDd"/>
                         <outlet property="tableView" destination="tpy-Z9-1et" id="fiR-Hp-AC6"/>
                         <segue destination="BV1-FR-VrT" kind="show" identifier="detailSegue" animates="NO" id="US3-UA-Agy"/>
@@ -118,9 +113,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
-                                <rect key="frame" x="0.0" y="17" width="414" height="862"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </arscnView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchased 0 times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3Z-z5-50W">
                                 <rect key="frame" x="20" y="841" width="374" height="21"/>
@@ -152,21 +146,25 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="tvb-yu-gFV" firstAttribute="leading" relation="lessThanOrEqual" secondItem="nVD-9s-a1G" secondAttribute="trailing" constant="217" id="1Et-Nn-t0a"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="3Vu-3c-ptS"/>
                             <constraint firstItem="qso-iT-X6l" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="6PV-qh-9ps"/>
                             <constraint firstItem="qso-iT-X6l" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="Etx-bX-ALc"/>
+                            <constraint firstAttribute="bottom" secondItem="BrB-h1-WRS" secondAttribute="bottom" id="IXE-9a-LFT"/>
                             <constraint firstItem="nVD-9s-a1G" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="20" id="MSh-5s-eBf"/>
+                            <constraint firstItem="tvb-yu-gFV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nVD-9s-a1G" secondAttribute="trailing" id="S8Q-YW-jbM"/>
                             <constraint firstItem="sfm-Pq-Qxc" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="20" id="UJQ-bG-TJw"/>
                             <constraint firstItem="w3Z-z5-50W" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="20" id="YPn-dT-MJH"/>
                             <constraint firstItem="tvb-yu-gFV" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" id="aRn-NV-7kK"/>
                             <constraint firstItem="nVD-9s-a1G" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" id="d8I-9F-8qg"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="fCa-15-VXK"/>
                             <constraint firstAttribute="bottom" secondItem="qso-iT-X6l" secondAttribute="bottom" id="g6U-Cz-ZBn"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="gsc-fM-363"/>
                             <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="tvb-yu-gFV" secondAttribute="trailing" constant="20" id="h4b-ig-0tl"/>
                             <constraint firstItem="w3Z-z5-50W" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="hsT-0T-SQ3"/>
                             <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="w3Z-z5-50W" secondAttribute="trailing" constant="20" id="k1D-Ta-Z0P"/>
+                            <constraint firstItem="tvb-yu-gFV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sfm-Pq-Qxc" secondAttribute="trailing" id="oHf-x5-UZD"/>
                             <constraint firstItem="qso-iT-X6l" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="vcI-eP-7KO"/>
                             <constraint firstItem="sfm-Pq-Qxc" firstAttribute="top" secondItem="nVD-9s-a1G" secondAttribute="bottom" constant="8" id="w9q-dX-vIB"/>
-                            <constraint firstItem="tvb-yu-gFV" firstAttribute="leading" relation="lessThanOrEqual" secondItem="sfm-Pq-Qxc" secondAttribute="trailing" constant="222" id="zoS-Wq-oUo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>

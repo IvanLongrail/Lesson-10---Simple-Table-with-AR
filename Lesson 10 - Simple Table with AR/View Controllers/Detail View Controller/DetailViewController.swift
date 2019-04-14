@@ -39,10 +39,17 @@ class DetailViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        UIView.animate(withDuration: 1, animations: {
+        UIView.animate(withDuration: 0.5, animations: {
             self.startImageView.alpha = 0
         }, completion: nil)
         
+        UIView.animate(withDuration: 1, delay: 0.5, animations: {
+            self.priceLabel.alpha = 1
+            self.nameLabel.alpha = 1
+            self.categoryLabel.alpha = 1
+            self.popularityRatingLabel.alpha = 1
+            self.sceneView.alpha = 1
+        }, completion: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -52,3 +59,4 @@ class DetailViewController: UIViewController {
         sceneView.session.pause()
     }
 }
+
