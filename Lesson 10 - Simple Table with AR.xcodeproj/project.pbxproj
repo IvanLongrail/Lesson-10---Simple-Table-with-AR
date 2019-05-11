@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B61289D82287280300AB6BB4 /* FocusSquareSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61289D62287280200AB6BB4 /* FocusSquareSegment.swift */; };
+		B61289D92287280300AB6BB4 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61289D72287280200AB6BB4 /* FocusSquare.swift */; };
+		B61289DB2287283900AB6BB4 /* DetailViewController+FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61289DA2287283900AB6BB4 /* DetailViewController+FocusSquare.swift */; };
+		B61289DD22872B5D00AB6BB4 /* DetailViewController+CustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61289DC22872B5D00AB6BB4 /* DetailViewController+CustomMethods.swift */; };
 		B638D843225F5D9E005749C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638D842225F5D9E005749C5 /* AppDelegate.swift */; };
 		B638D845225F5D9E005749C5 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B638D844225F5D9E005749C5 /* art.scnassets */; };
 		B638D847225F5D9E005749C5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638D846225F5D9E005749C5 /* DetailViewController.swift */; };
@@ -19,12 +23,15 @@
 		B638D866225F64AB005749C5 /* ListViewController + Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638D865225F64AB005749C5 /* ListViewController + Navigation.swift */; };
 		B63E445D2263850200938B53 /* DetailViewController + Custom Methods Of Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63E445C2263850200938B53 /* DetailViewController + Custom Methods Of Setup.swift */; };
 		B63E445F2263866300938B53 /* DetailViewController + ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63E445E2263866300938B53 /* DetailViewController + ARSCNViewDelegate.swift */; };
-		B63E44612263873A00938B53 /* DetailViewController + Custom Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63E44602263873A00938B53 /* DetailViewController + Custom Methods.swift */; };
 		B63E446322638BF800938B53 /* Product + Load Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63E446222638BF800938B53 /* Product + Load Methods.swift */; };
 		B64565FF2260C50D00A5BB48 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B64565FE2260C50D00A5BB48 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B61289D62287280200AB6BB4 /* FocusSquareSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquareSegment.swift; sourceTree = "<group>"; };
+		B61289D72287280200AB6BB4 /* FocusSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
+		B61289DA2287283900AB6BB4 /* DetailViewController+FocusSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+FocusSquare.swift"; sourceTree = "<group>"; };
+		B61289DC22872B5D00AB6BB4 /* DetailViewController+CustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+CustomMethods.swift"; sourceTree = "<group>"; };
 		B638D83F225F5D9E005749C5 /* Lesson 10 - Simple Table with AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson 10 - Simple Table with AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B638D842225F5D9E005749C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B638D844225F5D9E005749C5 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -39,7 +46,6 @@
 		B638D865225F64AB005749C5 /* ListViewController + Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController + Navigation.swift"; sourceTree = "<group>"; };
 		B63E445C2263850200938B53 /* DetailViewController + Custom Methods Of Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController + Custom Methods Of Setup.swift"; sourceTree = "<group>"; };
 		B63E445E2263866300938B53 /* DetailViewController + ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController + ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
-		B63E44602263873A00938B53 /* DetailViewController + Custom Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController + Custom Methods.swift"; sourceTree = "<group>"; };
 		B63E446222638BF800938B53 /* Product + Load Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product + Load Methods.swift"; sourceTree = "<group>"; };
 		B64565FE2260C50D00A5BB48 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B61289D5228727ED00AB6BB4 /* Focus Square */ = {
+			isa = PBXGroup;
+			children = (
+				B61289D72287280200AB6BB4 /* FocusSquare.swift */,
+				B61289D62287280200AB6BB4 /* FocusSquareSegment.swift */,
+			);
+			path = "Focus Square";
+			sourceTree = "<group>";
+		};
 		B638D836225F5D9E005749C5 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +120,7 @@
 			children = (
 				B638D85A225F5DD9005749C5 /* List View Controller */,
 				B638D85B225F5DE5005749C5 /* Detail View Controller */,
+				B61289D5228727ED00AB6BB4 /* Focus Square */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -137,7 +153,8 @@
 				B638D846225F5D9E005749C5 /* DetailViewController.swift */,
 				B63E445C2263850200938B53 /* DetailViewController + Custom Methods Of Setup.swift */,
 				B63E445E2263866300938B53 /* DetailViewController + ARSCNViewDelegate.swift */,
-				B63E44602263873A00938B53 /* DetailViewController + Custom Methods.swift */,
+				B61289DC22872B5D00AB6BB4 /* DetailViewController+CustomMethods.swift */,
+				B61289DA2287283900AB6BB4 /* DetailViewController+FocusSquare.swift */,
 			);
 			path = "Detail View Controller";
 			sourceTree = "<group>";
@@ -215,15 +232,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B638D847225F5D9E005749C5 /* DetailViewController.swift in Sources */,
+				B61289DB2287283900AB6BB4 /* DetailViewController+FocusSquare.swift in Sources */,
 				B638D866225F64AB005749C5 /* ListViewController + Navigation.swift in Sources */,
-				B63E44612263873A00938B53 /* DetailViewController + Custom Methods.swift in Sources */,
 				B63E445D2263850200938B53 /* DetailViewController + Custom Methods Of Setup.swift in Sources */,
 				B638D85F225F5E81005749C5 /* Product.swift in Sources */,
 				B63E445F2263866300938B53 /* DetailViewController + ARSCNViewDelegate.swift in Sources */,
 				B638D843225F5D9E005749C5 /* AppDelegate.swift in Sources */,
+				B61289D82287280300AB6BB4 /* FocusSquareSegment.swift in Sources */,
+				B61289D92287280300AB6BB4 /* FocusSquare.swift in Sources */,
 				B638D863225F5EBF005749C5 /* ListViewController + Custom Methods Of Setup.swift in Sources */,
 				B638D861225F5EAD005749C5 /* ListViewController + UITableView.swift in Sources */,
 				B63E446322638BF800938B53 /* Product + Load Methods.swift in Sources */,
+				B61289DD22872B5D00AB6BB4 /* DetailViewController+CustomMethods.swift in Sources */,
 				B638D85D225F5E75005749C5 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

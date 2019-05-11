@@ -140,6 +140,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching a surface" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6N-cT-i01" userLabel="HelpingLabel">
+                                <rect key="frame" x="92.5" y="728.5" width="229" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="1" green="0.91491508899999996" blue="0.1009775195" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qso-iT-X6l">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
@@ -163,6 +169,8 @@
                             <constraint firstItem="w3Z-z5-50W" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="hsT-0T-SQ3"/>
                             <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="w3Z-z5-50W" secondAttribute="trailing" constant="20" id="k1D-Ta-Z0P"/>
                             <constraint firstItem="tvb-yu-gFV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sfm-Pq-Qxc" secondAttribute="trailing" id="oHf-x5-UZD"/>
+                            <constraint firstItem="w3Z-z5-50W" firstAttribute="top" secondItem="o6N-cT-i01" secondAttribute="bottom" constant="80" id="qh8-W0-BcE"/>
+                            <constraint firstItem="o6N-cT-i01" firstAttribute="centerX" secondItem="BrB-h1-WRS" secondAttribute="centerX" id="t7P-Ex-DKc"/>
                             <constraint firstItem="qso-iT-X6l" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="vcI-eP-7KO"/>
                             <constraint firstItem="sfm-Pq-Qxc" firstAttribute="top" secondItem="nVD-9s-a1G" secondAttribute="bottom" constant="8" id="w9q-dX-vIB"/>
                         </constraints>
@@ -170,6 +178,7 @@
                     </view>
                     <connections>
                         <outlet property="categoryLabel" destination="sfm-Pq-Qxc" id="sVV-bB-fWD"/>
+                        <outlet property="helpingLabel" destination="o6N-cT-i01" id="QZx-xH-X0o"/>
                         <outlet property="nameLabel" destination="nVD-9s-a1G" id="e9D-9J-njE"/>
                         <outlet property="popularityRatingLabel" destination="w3Z-z5-50W" id="dy9-WM-rYR"/>
                         <outlet property="priceLabel" destination="tvb-yu-gFV" id="DjH-hD-7Dc"/>

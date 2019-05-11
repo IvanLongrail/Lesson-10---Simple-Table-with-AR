@@ -21,12 +21,14 @@ extension DetailViewController {
         categoryLabel.text = product.category.rawValue
         popularityRatingLabel.text = product.popularityRatingString
         startImageView.image = startImage
+        helpingLabel.text = "Searching a surface"
         
         startImageView.alpha = 1 // for animation
         priceLabel.alpha = 0
         nameLabel.alpha = 0
         categoryLabel.alpha = 0
         popularityRatingLabel.alpha = 0
+        helpingLabel.alpha = 0
         sceneView.alpha = 0
         
         let scene = SCNScene()

@@ -15,11 +15,34 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var popularityRatingLabel: UILabel!
+    @IBOutlet weak var helpingLabel: UILabel!
     @IBOutlet weak var startImageView:UIImageView!
     
+    var helpingText = "Searching a surface" {
+        didSet{
+            helpingLabel.text = helpingText
+        }
+    }
     
     var startImage: UIImage? // for animation
     var product: Product?
+    
+    var focusSquare = FocusSquare()
+    var focusSquareHide = false {
+        didSet {
+            UIView.animate(withDuration: 0.5) {
+                if self.focusSquareHide {
+                    self.helpingLabel.alpha = 0
+                } else {
+                    self.helpingLabel.alpha = 1
+                }
+            }
+        }
+    }
+    var screenCenter: CGPoint {
+        let bounds = self.sceneView.bounds
+        return CGPoint(x: bounds.midX, y: bounds.midY)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +71,7 @@ class DetailViewController: UIViewController {
             self.nameLabel.alpha = 1
             self.categoryLabel.alpha = 1
             self.popularityRatingLabel.alpha = 1
+            self.helpingLabel.alpha = 1
             self.sceneView.alpha = 1
         }, completion: nil)
     }
